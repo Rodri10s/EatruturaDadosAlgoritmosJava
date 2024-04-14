@@ -45,7 +45,16 @@ public class Lista <T> {
 		return elementos[posicao];
 	}
 	
-	public boolean busca(T elemento){
+	public int busca(T elemento){
+		for(int i=0; i<this.tamanho; i++) {
+			if(this.elementos[i].equals(elemento)){
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public boolean existe(T elemento){
 		for(int i=0; i<this.tamanho; i++) {
 			if(this.elementos[i].equals(elemento)){
 				return true;
@@ -115,6 +124,10 @@ public class Lista <T> {
 			this.elementos[i] = null;
 		}
 		this.tamanho = 0;
+	}
+
+	public int tamanho(){
+		return tamanho;
 	}
 	
 
