@@ -41,6 +41,9 @@ public class Contato {
 		this.telefone = telefone;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return "\nNome: "+nome+"\nEmail: "+email+"\nTelefone: "+telefone+"\n";
+	}
 
 }
