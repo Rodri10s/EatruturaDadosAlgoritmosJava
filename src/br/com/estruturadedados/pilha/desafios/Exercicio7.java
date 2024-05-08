@@ -1,4 +1,4 @@
-package br.com.estruturadedados.pilha.desafios.exercicio4;
+package br.com.estruturadedados.pilha.desafios;
 
 import java.util.Stack;
 
