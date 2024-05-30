@@ -22,4 +22,15 @@ public class Fila<T> extends EstruturaEstatica<T> {
         }
         return this.elementos[0];
     }
+
+    public T remove(){
+        T temporario =  this.elementos[0];
+
+        for(int i = 0; i < tamanho; i++){
+            this.elementos[i] = this.elementos[i+1];
+        }
+
+        this.tamanho--;
+        return temporario;
+    }
 }
